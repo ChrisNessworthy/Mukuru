@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    tools:context="com.mukuru.currencyexchange.fragments.CurrencyConverterFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/convert_currency_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fragment_margin"
+            android:layout_alignParentTop="true"/>
+
+        <EditText
+            android:id="@+id/amount_convert"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/fragment_margin"
+            android:inputType="numberDecimal"
+            android:hint="@string/use_convert"
+            android:layout_below="@id/convert_currency_spinner"/>
+
+        <TextView
+            android:id="@+id/converted_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin"
+            android:layout_below="@id/amount_convert"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/fragment_margin"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/convert_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin"
+            android:layout_below="@id/converted_amount"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/fragment_margin"
+            android:textSize="18sp"
+            android:text="@string/convert"/>
+    </RelativeLayout>
+</FrameLayout>

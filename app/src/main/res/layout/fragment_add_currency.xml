@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    tools:context="com.mukuru.currencyexchange.fragments.AddCurrencyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Spinner
+            android:id="@+id/currency_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fragment_margin"
+            android:layout_alignParentTop="true"/>
+
+        <EditText
+            android:id="@+id/warning_rate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="@dimen/fragment_margin"
+            android:inputType="numberDecimal"
+            android:hint="@string/warning_rate"
+            android:layout_below="@id/currency_spinner"/>
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin"
+            android:layout_below="@id/warning_rate"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorPrimary"
+            android:padding="@dimen/fragment_margin"
+            android:textSize="18sp"
+            android:text="@string/save"/>
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/app_margin"
+            android:layout_below="@id/warning_rate"
+            android:layout_toLeftOf="@id/save"
+            android:layout_toStartOf="@id/save"
+            android:padding="@dimen/fragment_margin"
+            android:textSize="18sp"
+            android:text="@string/cancel"/>
+    </RelativeLayout>
+</FrameLayout>

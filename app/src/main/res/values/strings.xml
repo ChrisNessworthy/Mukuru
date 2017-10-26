@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">CurrencyExchange</string>
+    <string name="title_activity_add_currency">AddCurrencyActivity</string>
+    <string name="title_activity_currency_detail">CurrencyDetailActivity</string>
+    <string name="title_activity_currency_converter">CurrencyConverterActivity</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="warning_rate">Warning rate</string>
+    <string name="currency_rate_text"> Current rate: </string>
+    <string name="use_convert">Enter USD to convert</string>
+    <string name="convert">Convert</string>
+    <string name="rate_text">Rate:</string>
+    <string name="time">Time:</string>
+    <string name="no_currency_error">No Currency Selected</string>
+    <string name="no_rate_error">Cannot find conversion rate for selected currency</string>
+    <string name="no_for_provider_error">Cannot find currency for provided ID</string>
+    <string name="notification_title"> over Warning Rate</string>
+    <string name="notification_text"> has gone over set Warning Rate</string>
+</resources>

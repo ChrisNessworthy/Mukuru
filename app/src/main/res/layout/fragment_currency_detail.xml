@@ -1,0 +1,37 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="16dp"
+    tools:context="com.mukuru.currencyexchange.fragments.CurrencyDetailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/current_rate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/app_margin"/>
+
+        <TextView
+            android:id="@+id/current_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/current_rate_text"
+            android:layout_toEndOf="@id/current_rate_text"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/app_margin"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rate_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/current_rate_text" />
+
+    </RelativeLayout>
+</FrameLayout>

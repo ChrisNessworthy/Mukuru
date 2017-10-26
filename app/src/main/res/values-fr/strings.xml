@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CurrencyExchange</string>
+    <string name="save">Sauvegarder</string>
+    <string name="cancel">Annuler</string>
+    <string name="warning_rate">Taux d\'avertissement</string>
+    <string name="currency_rate_text"> Taux actuel: </string>
+    <string name="use_convert">Entrer USD pour convertir</string>
+    <string name="convert">Convertir</string>
+    <string name="rate_text">Taux:</string>
+    <string name="time">Temps:</string>
+    <string name="no_currency_error">Aucune devise sélectionnée</string>
+    <string name="no_rate_error">Impossible de trouver le taux de conversion pour la devise sélectionnée</string>
+    <string name="no_for_provider_error">Impossible de trouver la devise pour l\'ID fourni</string>
+    <string name="notification_title"> sur le taux d\'avertissement</string>
+    <string name="notification_text"> a dépassé le set</string>
+</resources>
